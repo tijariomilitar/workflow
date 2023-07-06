@@ -1,0 +1,19 @@
+Comercial
+  Incluir status 'Ag. boletos'
+    Na confirmação de embalo (triageController.packment.confirm), verificar se o método de pagamento é por boletos,
+    Caso seja, o pedido deverá ser atualizado para o status 'Ag. boletos'
+
+    Atualizar interface de 'FINANCEIRO > PAGAMENTOS' para 'FINANCEIRO > PAGAMENTOS e BOLETOS'
+
+    Incluir no filtro das vendas o status 'Ag. boletos'
+
+    Atualizar toda a interface 'FINANCEIRO > PAGAMENTOS' para nova estrutura de front-end (possibilidade de criar métricas)
+
+    Após cadastrar os boletos incluir link no formulário de confirmação.
+
+    Na confirmação dos boletos (financialController.billet.confirm) 
+
+    Incluir cms_wt_erp.sale.billet
+
+    	let verifySalePaymentMethod = (await Sale.findById(req.body.sale_id))[0];
+    	if (verifySalePaymentMethod.payment_method == "Boleto") { sale.status = "Ag. boletos"; }
