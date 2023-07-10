@@ -1,0 +1,12 @@
+Filtrar por produto e período
+
+Pedido de compra lançado no ERP
+
+Sandro tem uma página de acesso que ele entra por um código verificador de 4 dígitos (Ele digita o número do pedido e acesso do usuário)
+
+Busca no banco de dados o pedido, e verifica se o código de acesso do usuário corresponde ao fornecedor do pedido.
+
+Abre o pedido, separa o material, faz a nota, envia para Leticia
+
+Leticia atualiza o pedido
+

@@ -17,3 +17,9 @@ Comercial
 
     	let verifySalePaymentMethod = (await Sale.findById(req.body.sale_id))[0];
     	if (verifySalePaymentMethod.payment_method == "Boleto") { sale.status = "Ag. boletos"; }
+
+
+----------------------------------
+STEPS
+Na confirmação de embalo (triageController.packment.confirm), verificar se o método de pagamento é por boletos,
+Caso seja, o pedido deverá ser atualizado para o status 'Ag. boletos'

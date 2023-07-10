@@ -1,0 +1,33 @@
+(Comercial) - Em produção - 07/07/2023
+  Problema: Pedidos por boleto ou com pagamento no momento do envio, demandam atenção para que não sejam enviados 
+    sem a realização do pagamento.
+
+  Solução: Atualizar fluxo do pedido para que após seja embalado ele fique retido no status 'Ag. boletos' ou 'Ag. pagamento 2/2'
+
+(Produção) - Fila
+  Problema: Após confirmar a preparação dos serviços de costura externa o pedido ficará preso e não poderá ser confirmado como 
+    concluído.
+
+  Solução: Terminar o desenvolvimento dos próximos status "'Ag. contagem' > 'Em conferência' >"
+    Os próximos stautus 'Ag. armazenamento' e 'Concluído' serão desenvolvidos no futuro
+
+(Produção) - Fila
+  Problema: Não é possível saber a quantidade de cada matéria-prima que compramos por mês.
+
+  Solução: Criar filtro 'POR MATÉRIA-PRIMA' dos pedidos realizados no ERP.
+
+(Financeiro) - Fila
+  Problema: Todas as origens de despesas ficam disponíveis para receber pagamentos, o que pode causar erros nos pagamentos, pois
+    caso seja selecionado por engano um fornecedor ou prestador de serviços desativado o pagamento será feito e não recuperado.
+
+  Solução: Atualizar cadastro de origens para que contenha a opção de ativo/inativo.
+
+(Produção/Financeiro) - Fila
+  Problema: Não é possível realizar o cadastro de novas costureiras, pois o cadastro é realizado através do financeiro.
+
+  Solução: Criar sistema de cadastro de costureiras que seja linkado a categoria de 'PRO-costura-externa'
+
+(Produção) - Fila
+  Problema: Após confirmar a conferência dos serviços de costura (Interna e externo) o pedido ficará preso e não poderá ser confirmado como armazenado.
+
+  Solução: Terminar o desenvolvimento dos próximos status "'Ag. armazenamento' > 'Concluído'"
