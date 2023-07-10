@@ -1,5 +1,8 @@
 Comercial
   Incluir status 'Ag. boletos'
+  Incluir status 'Ag. pagamento 2/2'
+    Incluir no PDV a opção de 
+
     Na confirmação de embalo (triageController.packment.confirm), verificar se o método de pagamento é por boletos,
     Caso seja, o pedido deverá ser atualizado para o status 'Ag. boletos'
 
@@ -18,8 +21,8 @@ Comercial
     	let verifySalePaymentMethod = (await Sale.findById(req.body.sale_id))[0];
     	if (verifySalePaymentMethod.payment_method == "Boleto") { sale.status = "Ag. boletos"; }
 
-
 ----------------------------------
-STEPS
-Na confirmação de embalo (triageController.packment.confirm), verificar se o método de pagamento é por boletos,
-Caso seja, o pedido deverá ser atualizado para o status 'Ag. boletos'
+
+sale
+
+sale_payment
